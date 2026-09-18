@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Tangerine:wght@400;700&display=swap');
+
+*{
+      
+        margin: 0%;
+        padding: 0%;
+
+}
+
+header {
+        position: fixed;
+        width: 100%;
+        background: rgb(87, 3, 38);
+}
+
+.navbar h1 {
+        font-size: 3rem;
+        color: white;
+        font-family: "Satisfy", cursive;
+}
+
+.container{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(87, 3, 38);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.weather_container{
+        color: white;
+
+}
+
+.temp{
+        font-size: 4.5rem;
+}
+
+.time_location{
+        font-size: 2rem;
+}
+
+.condition{
+        margin: 0.5rem;
+        margin-left: 0.2rem;
+        font-size: 2.5rem;
+        font-family: "Satisfy", cursive;
+}
+
+nav{
+        height: 100px;
+        margin: 5rem;
+}
+
+.search_area{
+        padding: 1rem 0;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: transparent;
+        font-size: 1.1rem;
+        border-bottom: 2px solid white;
+        width: 98%;
+}
+
+nav form button{
+        padding: 0.5rem;
+        background-color: white;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+
+}
+
+@media screen and (max-width:900px) {
+        .weather_container {
+                flex-direction: column;
+                padding-top: 100px;
+                box-sizing: border-box;
+
+        }
+}
