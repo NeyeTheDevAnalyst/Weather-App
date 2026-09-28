@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors());
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.get("/api/weather", async(req, res) => {
     const city = req.query.city;

@@ -11,7 +11,7 @@ form.addEventListener('submit', searchLocation);
 let target = 'Lagos'
 
 const fetchResults = async (targetLocation) =>{
-         let url = `http://localhost:5000/api/weather?city=${targetLocation}`
+         let url = `https://weather-app-kqxf.onrender.com/api/weather?city=${targetLocation}`
 
          const res = await fetch(url);
 
