@@ -1,4 +1,3 @@
-// http://api.weatherapi.com/v1/current.json?key=b4be675324244a0293a112747260404&q=Lagos&aqi=no
 
 const temperatureField = document.querySelector(".temp");
 const locationField = document.querySelector(".time_location p");
@@ -12,7 +11,7 @@ form.addEventListener('submit', searchLocation);
 let target = 'Lagos'
 
 const fetchResults = async (targetLocation) =>{
-         let url = `https://api.weatherapi.com/v1/current.json?key=b4be675324244a0293a112747260404&q=${targetLocation}&aqi=no`
+         let url = `http://localhost:5000/api/weather?city=${targetLocation}`
 
          const res = await fetch(url);
 

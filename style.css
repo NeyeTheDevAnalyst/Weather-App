@@ -14,9 +14,10 @@ header {
 }
 
 .navbar h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         color: white;
-        font-family: "Satisfy", cursive;
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
 }
 
 .container{
@@ -44,8 +45,9 @@ header {
 .condition{
         margin: 0.5rem;
         margin-left: 0.2rem;
-        font-size: 2.5rem;
-        font-family: "Satisfy", cursive;
+        font-size: 2.7rem;
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
 }
 
 nav{
@@ -76,11 +78,80 @@ nav form button{
 
 }
 
-@media screen and (max-width:900px) {
-        .weather_container {
-                flex-direction: column;
-                padding-top: 100px;
-                box-sizing: border-box;
+/* Mobile devices */
+@media screen and (max-width: 768px) {
 
-        }
+    .navbar h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    nav {
+        height: auto;
+        margin: 2rem 0;
+        width: 90%;
+    }
+
+    .container {
+        min-height: 100vh;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .weather_container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .temp {
+        font-size: 3.5rem;
+    }
+
+    .time_location {
+        font-size: 1.5rem;
+    }
+
+    .condition {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+    }
+
+    .search_area {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    nav form button {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar h1 {
+        font-size: 1.7rem;
+    }
+
+    .temp {
+        font-size: 3rem;
+    }
+
+    .time_location {
+        font-size: 1.3rem;
+    }
+
+    .condition {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        width: 95%;
+        margin: 1.5rem 0;
+    }
+
+    nav form button {
+        width: 100%;
+    }
 }
